@@ -69,14 +69,14 @@ Below is the architecture of the CI/CD pipeline:
 1. Create an EKS cluster using **eksctl**:
 
    ```bash
-   eksctl create cluster -f terraform/cluster.yaml
+   eksctl create cluster -f Terraform/cluster.yaml
    ```
 2. Write Kubernetes manifests (`deployment.yaml` and `service.yaml`) in the `k8s/` folder.
 3. Test deployment manually:
 
    ```bash
-   kubectl apply -f k8s/deployment.yaml
-   kubectl apply -f k8s/service.yaml
+   kubectl apply -f K8s/deployment.yaml
+   kubectl apply -f K8s/service.yaml
    kubectl get pods
    kubectl get svc
    ```
@@ -115,14 +115,16 @@ Below is the architecture of the CI/CD pipeline:
    * Tags the image with the build number.
    * Pushes the image to DockerHub.
 
-4. **Deploy to EKS**
+4. **Deploy to EC2**
+   
+   * Deploy to EC2 instance using docker run command.
+   * Verify EC2 deployment using docker ps command. 
+
+5. **Deploy to EKS**
 
    * Jenkins applies Kubernetes manifests (`deployment.yaml` & `service.yaml`) to the EKS cluster.
    * Updates deployments and services automatically.
 
-5. **Monitoring**
-
-   * Application logs can be accessed via `kubectl logs <pod-name>` or through AWS CloudWatch (if configured for Container Insights).
 
 ---
 
