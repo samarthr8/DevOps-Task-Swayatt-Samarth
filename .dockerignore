@@ -14,14 +14,14 @@ yarn-error.log
 
 # Documentation
 README.md
-
-# Local images / assets not needed in container
-logoswayatt.png
+WRITEUP.md
 
 # Terraform, Jenkins, Kubernetes configs
 Terraform/
 jenkins/
 K8s/
+deployment-proof/
+docs/
 
 # Docker-related
 Dockerfile
