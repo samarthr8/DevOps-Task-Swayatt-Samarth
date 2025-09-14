@@ -1,6 +1,3 @@
-Absolutely! Based on your detailed workflow, here’s a polished **README.md** you can use for your GitHub repository. I’ve structured it clearly with the architecture diagram, setup instructions, and pipeline explanation. You can update the diagram path as needed.
-
----
 
 ````markdown
 # DevOps Task: CI/CD Pipeline for Node.js Application
