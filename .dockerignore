@@ -1,0 +1,29 @@
+# Node modules and logs
+node_modules
+npm-debug.log
+yarn-error.log
+
+# OS / editor files
+.DS_Store
+*.swp
+*.swo
+
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+
+# Local images / assets not needed in container
+logoswayatt.png
+
+# Terraform, Jenkins, Kubernetes configs
+Terraform/
+jenkins/
+K8s/
+
+# Docker-related
+Dockerfile
+.dockerignore
+
