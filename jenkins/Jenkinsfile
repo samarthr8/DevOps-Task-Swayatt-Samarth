@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/samarthr8/devops-task-swayatt.git'
+                git branch: 'dev', url: 'https://github.com/samarthr8/DevOps-Task-Swayatt-Samarth.git'
             }
         }
         
